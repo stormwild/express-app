@@ -9,7 +9,5 @@ response.send("Hello, world!");
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
-
-console.log("Express app started on port 3000.");
-
+    console.log("Express app started on port " + process.env.PORT || 3000 + ".");
 });
